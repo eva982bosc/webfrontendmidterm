@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Display: flex nav</title>
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="css/font-awesome-4.6.3/css/font-awesome.min.css"
+    />
+  </head>
+  <styles><link rel="stylesheet" href="styles.css" /></styles>
+  <body>
+    <header>
+      <a href="index.html" class="logo"><i class="fa fa-bullseye fa-3x"></i></a>
+      <nav>
+        <ul>
+          <li>
+            <a data-story="recipes" href="#recipes" class="active">Recipes</a>
+          </li>
+          <li><a data-story="reviews" href="#reviews">Reviews</a></li>
+          <li><a data-story="delivery" href="#delivery">Delivery</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="sign-out-link">Sign Out</a>
+    </header>
+
+    <div class="content"></div>
+    <script src="data-object.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

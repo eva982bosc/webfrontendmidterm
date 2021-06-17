@@ -1,0 +1,134 @@
+/*
+
+  <body>
+    <header>
+      <a href="#" class="logo"><i class="fa fa-bullseye fa-3x"></i></a>
+      <nav>
+        <ul>
+          <li><a class="active" href="recipes.html">Recipes</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="delivery.html">Delivery</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="sign-out-link">Sign Out</a>
+    </header>
+
+
+logo class
+
+a 
+logo, recipes, reviews, delivery, sign out
+
+nav
+ul li
+
+nav a
+recipes, reviews, delivery
+
+sign out link class
+ 
+header
+wraps all
+*/
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.logo {
+  color: peachpuff;
+  font-size: 14px;
+}
+
+a {
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(193, 193, 193);
+  font-weight: 300px;
+  text-transform: uppercase;
+}
+
+a.active {
+  background-color: rgb(255, 254, 254, 0.25);
+  color: mediumturquoise;
+  padding: 17px;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul {
+  padding: 0;
+  margin-left: 0px;
+}
+
+nav li a:hover {
+  color: aqua;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 7px;
+  justify-content: flex-start;
+}
+
+p {
+  background-color: powderblue;
+  color: black;
+  font-size: 30px;
+}
+
+.sign-out-link {
+  color: mediumaquamarine;
+  font-size: 13px;
+  font-weight: 300px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: auto;
+  padding-right: 0;
+}
+
+.sign-out-link:hover {
+  color: darkcyan;
+}
+
+.content {
+  padding: 1rem;
+}
+
+@media all and (max-width: 600px) {
+  .logo {
+    color: pink;
+    flex: 1;
+    padding-right: 200px;
+  }
+
+  .sign-out-link {
+    color: pink;
+    order: 1;
+    flex: 1;
+    padding-left: 200px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: block;
+    width: 100%;
+    order: 2;
+    background-color: rgba(85, 84, 84, 0.5);
+  }
+}
